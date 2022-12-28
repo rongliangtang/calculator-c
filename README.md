@@ -11,4 +11,4 @@
 - GUI界面
 
 # 界面
-![calculator-c](https://blog-1259405505.cos.ap-guangzhou.myqcloud.com/interface1.png)
+<img src="https://blog-1259405505.cos.ap-guangzhou.myqcloud.com/interface1.png" alt="calculator" style="zoom:36%;" />
