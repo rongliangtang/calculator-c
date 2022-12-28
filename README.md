@@ -9,6 +9,3 @@
 - 控制台显示
 - 单元测试
 - GUI界面
-
-# 界面
-<img src="https://blog-1259405505.cos.ap-guangzhou.myqcloud.com/interface1.png" alt="calculator" style="zoom:36%;" />
