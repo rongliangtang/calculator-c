@@ -49,6 +49,6 @@ CalcContext *CreateCalcContext();
  * @param p_context
  * @return
  */
-void DestoryCalcContext(CalcContext **p_context);
+void DestroyCalcContext(CalcContext **p_context);
 
 #endif //CALCULATOR__CALCULATOR_H_

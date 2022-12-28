@@ -12,7 +12,7 @@
 UiContext *ui_context;
 
 // 输出字符串函数（后面赋值给CalcContext->display_text）
-static void DisplayTextWithField(char *text){
+static void DisplayTextWithBuffer(char *text){
   // 将后面字符串写入到前面字符串中
   sprintf(ui_context->text_displayer, text);
 }
@@ -28,7 +28,7 @@ static void InitUt(){
   // 创建计算上下文
   ui_context->context = CreateCalcContext();
   // 输出字符串函数赋值
-  ui_context->context->display_text = DisplayTextWithField;
+  ui_context->context->display_text = DisplayTextWithBuffer;
 }
 
 // 运行控制台
@@ -65,8 +65,8 @@ static void UtMain() {
 }
 
 // 销毁控制台
-static void DestoryUt(){
-  DestoryCalcContext(&ui_context->context);
+static void DestroyUt(){
+  DestroyCalcContext(&ui_context->context);
   free(ui_context->text_displayer);
   free(ui_context);
   ui_context = NULL;
@@ -76,6 +76,6 @@ static void DestoryUt(){
 int RunUtUi(int argc, char *argv[]){
   InitUt();
   UtMain();
-  DestoryUt();
+  DestroyUt();
   return 0;
 }

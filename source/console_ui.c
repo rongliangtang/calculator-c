@@ -11,7 +11,7 @@
 UiContext *ui_context;
 
 // 输出字符串函数
-static void DisplayTextWithField(char *text){
+static void DisplayTextWithFile(char *text){
   // 把字符串写入到指定的流 stream 中，但不包括空字符。
   // 系统不会自动添加换行符
   fputs(text, ui_context->text_displayer);
@@ -30,7 +30,7 @@ static void InitConsole(){
   // 创建计算上下文
   ui_context->context = CreateCalcContext();
   // 输出字符串函数赋值
-  ui_context->context->display_text = DisplayTextWithField;
+  ui_context->context->display_text = DisplayTextWithFile;
 }
 
 // 运行控制台
@@ -46,8 +46,8 @@ static void ConsoleMain() {
 }
 
 // 销毁控制台
-static void DestoryConsole(){
-  DestoryCalcContext(&ui_context->context);
+static void DestroyConsole(){
+  DestroyCalcContext(&ui_context->context);
   free(ui_context);
   ui_context = NULL;
 }
@@ -56,6 +56,6 @@ static void DestoryConsole(){
 int RunConsoleUi(int argc, char *argv[]){
   InitConsole();
   ConsoleMain();
-  DestoryConsole();
+  DestroyConsole();
   return 0;
 }

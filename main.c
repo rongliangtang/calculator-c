@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-#include "source/console_ui.h"
+#include "console_ui.h"
 #include "ut_ui.h"
+#include "gtk_ui.h"
 
 int main(int argc, char *argv[]) {
   if (argc > 1) {
@@ -11,6 +12,7 @@ int main(int argc, char *argv[]) {
       return RunUtUi(argc, argv);
     }
   }
+  RunGtkUi(argc, argv);
 
   return 0;
 }

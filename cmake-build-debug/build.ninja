@@ -67,6 +67,13 @@ build CMakeFiles/calculator.dir/source/console_ui.c.o: C_COMPILER__calculator_De
   OBJECT_DIR = CMakeFiles/calculator.dir
   OBJECT_FILE_DIR = CMakeFiles/calculator.dir/source
 
+build CMakeFiles/calculator.dir/source/gtk_ui.c.o: C_COMPILER__calculator_Debug /Users/liang/CLionProjects/calculator/source/gtk_ui.c || cmake_object_order_depends_target_calculator
+  DEP_FILE = CMakeFiles/calculator.dir/source/gtk_ui.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
+  INCLUDES = -I/Users/liang/CLionProjects/calculator/include -I/Users/liang/CLionProjects/calculator/source -I/Users/liang/CLionProjects/calculator/unit_test -I/usr/local/Cellar/gtk+3/3.24.36/include/gtk-3.0 -I/usr/local/Cellar/glib/2.74.3/include/gio-unix-2.0 -I/usr/local/Cellar/cairo/1.16.0_5/include/cairo -I/usr/local/Cellar/libepoxy/1.5.10/include -I/usr/local/Cellar/pango/1.50.12/include/pango-1.0 -I/usr/local/Cellar/harfbuzz/5.3.1/include/harfbuzz -I/usr/local/Cellar/fribidi/1.0.12/include/fribidi -I/usr/local/Cellar/graphite2/1.3.14/include -I/usr/local/Cellar/atk/2.38.0/include/atk-1.0 -I/usr/local/Cellar/pixman/0.42.2/include/pixman-1 -I/usr/local/Cellar/fontconfig/2.14.1/include -I/usr/local/opt/freetype/include/freetype2 -I/usr/local/Cellar/libxcb/1.15/include -I/usr/local/Cellar/libxrender/0.9.10/include -I/usr/local/Cellar/libxext/1.3.5/include -I/usr/local/Cellar/libx11/1.8.2/include -I/usr/local/Cellar/libxau/1.0.11/include -I/usr/local/Cellar/libxdmcp/1.1.4/include -I/usr/local/Cellar/gdk-pixbuf/2.42.10/include/gdk-pixbuf-2.0 -I/usr/local/Cellar/libpng/1.6.39/include/libpng16 -I/usr/local/Cellar/jpeg-turbo/2.1.4/include -I/usr/local/Cellar/libtiff/4.4.0_1/include -I/usr/local/Cellar/glib/2.74.3/include -I/usr/local/Cellar/glib/2.74.3/include/glib-2.0 -I/usr/local/Cellar/glib/2.74.3/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre2/10.42/include -I/usr/local/Cellar/xorgproto/2022.2/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/ffi
+  OBJECT_DIR = CMakeFiles/calculator.dir
+  OBJECT_FILE_DIR = CMakeFiles/calculator.dir/source
+
 build CMakeFiles/calculator.dir/source/operation.c.o: C_COMPILER__calculator_Debug /Users/liang/CLionProjects/calculator/source/operation.c || cmake_object_order_depends_target_calculator
   DEP_FILE = CMakeFiles/calculator.dir/source/operation.c.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -fcolor-diagnostics
@@ -89,7 +96,7 @@ build CMakeFiles/calculator.dir/unit_test/ut_ui.c.o: C_COMPILER__calculator_Debu
 #############################################
 # Link the executable calculator
 
-build calculator: C_EXECUTABLE_LINKER__calculator_Debug CMakeFiles/calculator.dir/main.c.o CMakeFiles/calculator.dir/source/calculator.c.o CMakeFiles/calculator.dir/source/console_ui.c.o CMakeFiles/calculator.dir/source/operation.c.o CMakeFiles/calculator.dir/unit_test/ut_ui.c.o
+build calculator: C_EXECUTABLE_LINKER__calculator_Debug CMakeFiles/calculator.dir/main.c.o CMakeFiles/calculator.dir/source/calculator.c.o CMakeFiles/calculator.dir/source/console_ui.c.o CMakeFiles/calculator.dir/source/gtk_ui.c.o CMakeFiles/calculator.dir/source/operation.c.o CMakeFiles/calculator.dir/unit_test/ut_ui.c.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/Cellar/gtk+3/3.24.36/lib -Wl,-rpath,/usr/local/Cellar/pango/1.50.12/lib -Wl,-rpath,/usr/local/Cellar/harfbuzz/5.3.1/lib -Wl,-rpath,/usr/local/Cellar/atk/2.38.0/lib -Wl,-rpath,/usr/local/Cellar/cairo/1.16.0_5/lib -Wl,-rpath,/usr/local/Cellar/gdk-pixbuf/2.42.10/lib -Wl,-rpath,/usr/local/Cellar/glib/2.74.3/lib -Wl,-rpath,/usr/local/opt/gettext/lib  -lgtk-3  -lgdk-3  -lpangocairo-1.0  -lpango-1.0  -lharfbuzz  -latk-1.0  -lcairo-gobject  -lcairo  -lgdk_pixbuf-2.0  -lgio-2.0  -lgobject-2.0  -lglib-2.0  -lintl  -lglib-2.0  -lintl
   LINK_PATH = -L/usr/local/Cellar/gtk+3/3.24.36/lib   -L/usr/local/Cellar/pango/1.50.12/lib   -L/usr/local/Cellar/harfbuzz/5.3.1/lib   -L/usr/local/Cellar/atk/2.38.0/lib   -L/usr/local/Cellar/cairo/1.16.0_5/lib   -L/usr/local/Cellar/gdk-pixbuf/2.42.10/lib   -L/usr/local/Cellar/glib/2.74.3/lib   -L/usr/local/opt/gettext/lib

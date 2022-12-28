@@ -269,7 +269,7 @@ CalcContext *CreateCalcContext(){
 }
 
 // 因为需要改变指针的值，所以函数传参要为指针的指针
-void DestoryCalcContext(CalcContext **p_context){
+void DestroyCalcContext(CalcContext **p_context){
   free(*p_context);
   *p_context = NULL;
 }
